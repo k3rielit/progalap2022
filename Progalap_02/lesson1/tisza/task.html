@@ -1,0 +1,36 @@
+<html lang="hu">
+    <h1>[⭐⭐⭐] 23. Tisza (7 pont)</h1>
+    Tibor szeretne átkelni a Tiszán, mivel ott él egy galamb, akiről gondoskodik. Tibor nem tud úszni, így attól fél, hogy beleesik a Tiszába, mivel nagyon
+    sok akadály található a vízen. Segíts neki megmondani, hogy a következő időpillanatban ki kell-e térni egy akadály elől, vagy lehet menni tovább egyenesen.<br>
+    <br>
+    Készíts programot, amelynek meg kell adni, hogy az adott időpillanatban hogy néz ki Tibor előtt a víz, majd a program megmondja, hogy ki kell-e térni.<br>
+    A programnak először is meg kell adni milyen széles a víz. Tibor mindig a víz bal oldaláról indul. Amennyiben azt mondjuk neki, hogy ki kell térni, akkor abba
+    az irányba megy, ahol kevesebbet kell evezni ahhoz, hogy kitérjen. Ha ez mind a két oldalra egyforma, akkor bal oldalra tér ki. Például:<br>
+    <div style="background-color: #eeeeee; margin-left: 10px; margin-right: 10px; font-family: monospace">
+        5<br>
+        x---- vigyazat!<br>
+        x--x- ok!<br>
+        xx--- vigyazat!<br>
+        -xx-x vigyazat!<br>
+        _____ <br>
+    </div>
+    <br>
+    A fenti példában 5 széles a víz, tehát minden sorban 5 karaktert fogunk beolvasni, amelyek az alábbi jelentéssel bírnak:<br>
+    <ul>
+        <li>x: akadály, ki kell kerülni</li>
+        <li>-: nincs akadály, itt lehet evezni</li>
+        <li>_: a túlsó part, amit el kell érni, ez zárja az inputot</li>
+    </ul>
+
+    Minden sor után válaszolni kell az alábbi módon:
+    <ul>
+        <li><i>vigyazat!</i>: amennyiben Tibornak ki kell térnie</li>
+        <li><i>ok!</i>: amennyiben haladhat tovább egyenesen</li>
+    </ul>
+
+    A fenti példában az első lépésben ki kell térnie eggyel jobbra, tehát a második oszlopban lesz. Utána nincs akadály előtte, tehát mehet tovább. A következő
+    lépésben van előtte akadály. Mivel csak jobbra tudja kikerülni, így átmegy a 3. oszlopba. Végül pedig az utolsó lépésben szintén jobbra fog menni, mivel
+    balra 2-t kéne eveznie, jobbra pedig 1-et.
+    <br>
+    Az inputban az egyes részsorozatokat szóköz választja el, például: <code>5 x---- x--x- xx--- -xx-x</code>
+</html>

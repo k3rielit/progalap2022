@@ -1,0 +1,3 @@
+int kod() {
+    return 's';
+}

@@ -1,0 +1,32 @@
+<html lang="hu">
+    <h1>[⭐] 5. Iskola (3 pont)</h1>
+    Móricka rosszul viselkedett, így a tanító néni azt a büntetést adta neki, hogy írja le 1024x, hogy "Nem szabad az asztalbol a csavarokat kiszedni!". <br>
+    <br>
+    Készítsd el a main függvényt, amiben kiírod 1024x a kért szöveget az alábbi formátumban:<br>
+    1. Nem szabad az asztalbol a csavarokat kiszedni!<br>
+    2. Nem szabad az asztalbol a csavarokat kiszedni!<br>
+    [...]
+
+    <div class="hint">
+        Ha egy adott feladatot megadott darabszámszor szeretnénk végrehajtani, akkor arra nagyszerű választás a for ciklus. A for ciklus fejléce 3 részből áll:<br>
+        <ul>
+            <li>Inicializációs rész: általában itt szoktuk a ciklusváltozót (változókat) létrehozni (1x fut le, a legelején)</li>
+            <li>Feltétel: itt adunk meg egy feltételt, ami megmondja, hogy meddig menjen a ciklus (ez minden iterációban (a ciklusmag minden lefutása után) ellenőrzésre kerül)</li>
+            <li>Inkrementáló rész: itt szoktuk a ciklusváltozót növelni</li>
+        </ul>
+
+        Például az alábbi kódban az <i>i</i> 0-ról indul, és addig megy, amíg el nem éri a 100-at (tehát 99-re még lefut, 100-ra már nem). Minden iterációban 1-gyel növeljük
+        az i-t. Tehát a először i=0 lesz, majd kiírja a 0-t. Aztán növeljük, így i=1 lesz, kiírja az 1-et... Egy idő után i=99 lesz, kiírja a 99-et. Aztán i = 100 lesz,
+        azonban ilyenkor már nem teljesül a feltétel, így a ciklus véget ér.<br>
+        <pre>
+for (int i = 0; i < 100; i++) {
+    printf("%d\n", i);
+}</pre>
+
+        Természetesen nem kell 0-ról indulnunk, és nem feltétlen 1-gyel kell növelnünk az i-t, és a feltétel is lehet sokkal bonyolultabb.
+
+
+
+    </div>
+
+</html>

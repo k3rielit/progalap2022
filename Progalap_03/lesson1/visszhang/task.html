@@ -1,0 +1,20 @@
+<html lang="hu">
+    <h1>[⭐] 3. Visszhang (1 pont)</h1>
+    Szeretnénk, ha a számítógép meg tudná ismételni azt, amit begépelünk. Készítsd el az <i>echo</i> függvényt, amelyben ez megtörténik! A függvény már majdnem kész van, egyedül a string létrehozása
+    hiányzik. A programot legfeljebb 100 hosszú szövegekre szeretnénk felkészíteni.
+
+    <div class="hint">
+        Stringeket (szövegeket, karaktersorozatokat) tömbként tudunk C-ben létrehozni. A tömbök több azonos típusú elemet tárolni képes adatszerkezet. Létrehozáskor meg kell adnunk a méretét.<br>
+        Pl. <code>int szamok[10]</code> esetén létrejön egy 10 elemű, egész számokat tároló tömb. A tömb elemeit az alábbi formában érhetjük el (mint hagyományos változók): szamok[0], szamok[1],
+        szamok[2], ... , szamok[8], szamok[9]. Tehát 10 eleme van: 0-tól 9-ig indexelve.<br>
+        A tömbökön egyszerűen végigmehetünk pl. for ciklust használva.<br>
+        Ha van egy stringünk, annak hasonlóképpen egyesével lekérdezhetjük a karaktereit, de a printf és scanf tudja az egészet kezelni.
+    </div>
+
+    <div class="hint">
+        Alapvetően a scanf whitespace-ig olvas, azaz pl. szóköznél meg fog állni. Azonban az alábbi módon meg tudjuk neki mondani, hogy sor végéig olvasson:
+        scanf("%[^\n]s", str);
+    </div>
+
+
+</html>

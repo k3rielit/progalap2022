@@ -1,0 +1,23 @@
+<html lang="hu">
+    <h1>[⭐⭐] 27. Ábécé 2. (4 pont)</h1>
+    A feladat pontosan ugyanaz, mint az <i>abece1</i> feladat esetében. Az egyetlen különbség az inputban van: először kell megadni az eltolás mértékét, majd utána a betűt: <br>
+    3 a<br>
+    Az eltolt betu: d<br>
+    <br>
+
+    <div class="hint">
+        <ul>
+            <li>
+                Beolvasásnál érdemes arra ügyelni, hogy miután beolvastunk egy számot, utána egy karaktert olvasunk. Azonban mielőtt a tényleges karaktert beolvassuk, előtte egy
+                szóköz vagy enter is beírásra kerül, és ilyen esetben a program úgy értelmezi, hogy az a karakterünk. Tehát a szám beolvasása után be kell olvasnunk még egy karaktert
+                (amit eldobunk), majd még egyet, ami a tényleges karakter lesz.<br>
+                Az előző feladatnál nem jött elő ez a probléma, mivel ott a karaktert olvastuk rögtön a legelején. Az egész számot pedig amikor olvassa, akkor a whitespace-eket
+                figyelmen kívül hagyja.
+            </li>
+            <li>
+                Ezt meg lehet úgy oldani, hogy beolvassuk az értéket, de nem használjuk fel. Vagy akár a scanf formátumstringjébe írhatunk %*c -t, ami azt jelenti, hogy itt egy
+                karakter jön, olvassa be, de nem érdekel, hogy mi az, tehát ne legyen eltárolva.
+            </li>
+        </ul>
+    </div>
+</html>

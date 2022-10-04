@@ -1,0 +1,7 @@
+*.yaml
+CMakeLists.txt
+*/.idea/*
+*/test-framework/*
+*/cmake/*
+*/cmake-build-debug/*
+

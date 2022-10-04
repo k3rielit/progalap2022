@@ -1,0 +1,29 @@
+<html lang="hu">
+    <h1>[⭐] 8. Számológép (2 pont)</h1>
+    Gábor számológépet szeretne készíteni szakdolgozatként, de sajnos nem tudja hogyan kezdjen hozzá. Segíts Gábornak!
+    <br>
+    A feladata jelenleg annyi, hogy olvasson be két számot a standard inputról, és az összegüket írja ki a standard outputra. Gábor már elkezdte a munkát, már csak a második szám
+    beolvasása, illetve az eredmény kiírása maradt hátra, melyeket neked kell elkészítened. A kiíratás végén ne legyen sortörés!
+
+    <div class="hint">
+      <ul>
+          <li>Beolvasni a scanf utasítással tudunk, melynek használatához szintén include-olnunk kell az stdio.h header fájlt</li>
+          <li>Első paraméterként meg kell adni egy formátumstringet, ami tartalmazza, hogy milyen típusú értéket / értékeket szeretnénk beolvasni.
+          A formátumstring pl. az alábbi jelöléseket tartalmazhatja:
+              <ul>
+                  <li>%d: egész szám (int)</li>
+                  <li>%f: valós szám (float)</li>
+                  <li>%lf: valós szám (double)</li>
+                  <li>%c: karakter (char)</li>
+              </ul>
+          </li>
+          A további paraméter(ek) pedig azt mondja meg, hogy hova tegye az eredményt: egy változónak a címét kell megadni, ami a változó elé tett & jellel oldható meg.
+          <li>Például ha egy valós számot szeretnénk beolvasni az "hanyados" változóba, azt az alábbi módon tehetem meg:<br>
+              <i>scanf("%f", &hanyados);</i>
+          </li>
+          <li>Amennyiben kiírásnál nem csak szöveget szeretnénk kiírni, akkor ott is használnunk kell a formátumstringet, hasonló jelölésekkel. A különbség, hogy printf esetén
+          nem a változó címét kell átadni, hanem a konkrét változót, tehát & jelre nincs szükség.</li>
+          <li>Például: printf("Az elert pontszamod: %d", pontszam);<br>Ilyenkor a %d helyére behelyettesítődik a <i>pontszam</i> változó értéke.</li>
+      </ul>
+    </div>
+</html>

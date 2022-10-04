@@ -1,0 +1,1 @@
+int oszthatosag(int*a,int l){int c=0;for(;l>0;l--){c+=!(a[l-1]%2);}return c;}
