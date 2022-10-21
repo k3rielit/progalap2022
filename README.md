@@ -9,6 +9,8 @@ de legalabb volt ertelme megcsinalni... ja nem
 tcc -o a.exe kekw.c
 ./a -t 1
 ```
-tcc > gcc
+`tcc > gcc`
 
 [vagy...](https://www.programiz.com/c-programming/online-compiler/)
+
+*ja-netfilter > jetbrains account*
