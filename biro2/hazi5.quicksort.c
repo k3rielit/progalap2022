@@ -35,20 +35,39 @@ kozotti sorrend ne valtozzon az eredetihez kepest.)
 #if ! (defined(KIHAGY_1) || defined(KIHAGY_MIND))
 
 typedef struct {
-	char nev[100];
-	int szuletesi_ev;
+    char nev[100];
+    int szuletesi_ev;
 } paciens;
-
-void rendez(paciens paciensek[], int n) {
-    for (int step=0; step<n-1; ++step) {  // bubble sort
-        for (int i=0; i<n-step-1; ++i) {
-            if (paciensek[i].szuletesi_ev>paciensek[i+1].szuletesi_ev) {
-                paciens temp = paciensek[i];
-                paciensek[i] = paciensek[i+1];
-                paciensek[i+1] = temp;
-            }
-        }
+ 
+void swap(paciens *a, paciens *b) {
+  paciens t = *a;
+  *a = *b;
+  *b = t;
+}
+ 
+int partition(paciens array[], int low, int high) {
+  paciens pivot = array[high];
+  int i = (low - 1);
+  for (int j = low; j < high; j++) {
+    if (array[j].szuletesi_ev <= pivot.szuletesi_ev) {
+      i++;
+      swap(&array[i], &array[j]);
     }
+  }
+  swap(&array[i + 1], &array[high]);
+  return (i + 1);
+}
+ 
+void quickSort(paciens array[], int low, int high) {
+  if (low < high) {
+    int pi = partition(array, low, high);
+    quickSort(array, low, pi - 1);
+    quickSort(array, pi + 1, high);
+  }
+}
+ 
+void rendez(paciens paciensek[], int n) {
+    quickSort(paciensek, 0, n - 1);
 }
 
 #endif
