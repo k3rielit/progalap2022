@@ -14,3 +14,7 @@ tcc -o a.exe kekw.c
 [vagy...](https://www.programiz.com/c-programming/online-compiler/)
 
 *ja-netfilter > jetbrains account*
+
+-----
+
+eddig bírta a clion+edutools
